@@ -1,3 +1,10 @@
+/* #region fonts */
+@font-face {
+    font-family: "PressStart2P";
+    src: url("./fonts/PressStart2P-Regular.ttf");
+}
+/* #endregion */
+
 /* #region variables */
 :root{
     /* Color pallete */
@@ -7,5 +14,15 @@
     --red: #8C0E0F;
     --gold: #E89C31;
     --dark-gold: #DBA858;
+    --default-font-family: "PressStart2P";
+    --default-font-size: 18px;
+}
+/* #endregion */
+
+/* #region general body */
+html{
+    background-color: var(--medium-blue);
+    font-family: var(--default-font-family);
+    height: 100vh;
 }
 /* #endregion */
