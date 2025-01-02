@@ -1,28 +1,61 @@
 /* #region fonts */
 @font-face {
-    font-family: "PressStart2P";
-    src: url("./fonts/PressStart2P-Regular.ttf");
+    font-family: "Poppins";
+    src: url("./Fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(".Fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: "Poppins-Thin";
+    src: url("./Fonts/Poppins/Poppins-Thin.ttf");
 }
 /* #endregion */
 
 /* #region variables */
 :root{
     /* Color pallete */
-    --dark-blue: #031B28;
-    --medium-blue: #0b2838;
-    --light-blue: #083248;
-    --red: #8C0E0F;
-    --gold: #E89C31;
-    --dark-gold: #DBA858;
-    --default-font-family: "PressStart2P";
-    --default-font-size: 18px;
+
+    /* Primary colors */
+    --white: #FFFFFF;
+    --light-gray: #F7F8FA;
+    --medium-gray: #B0B3B8;
+    --dark-gray: #4A5568;
+
+    /* Accent Colors */
+    --soft-blue: #007BFF;
+    --muted-blue: #5A67D8;
+    --coral: #FF6B6B;
+
+    /* Fonts */
+    --default-font: Poppins;
+    --default-bold: Poppins-Bold;
+    --default-thin: Poppins-Thin
 }
 /* #endregion */
 
 /* #region general body */
 html{
-    background-color: var(--medium-blue);
-    font-family: var(--default-font-family);
+    font-family: var(--default-font);
+    font-size: var(--default-font-size);
+    background-color: var(--white);
+    color: var(--medium-gray);
     height: 100vh;
+    width: 100vw;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #endregion */
+
+/* #region general classes */
+.main-header{
+    /* color: #FFF; */
+    color: var(--dark-gray);
+    font-size: 3em;
+    /* text-shadow: 1px 1px 2px var(--gold); */
 }
 /* #endregion */
